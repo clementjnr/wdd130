@@ -46,7 +46,7 @@ nav ul {
 }
 
 nav a {
-    color: white;
+    color: var(--secondary-color);
     text-decoration: none;
 }
 
@@ -88,12 +88,12 @@ article {
 .hero article {
     position: absolute;
     bottom: 20px;
-    left: 50px;
+    left: 50%;
     transform: translateX(-50%);
     background-color: white;
     padding: 15px;
     width: 70%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, alpha);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .hero article img {
