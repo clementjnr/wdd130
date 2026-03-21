@@ -22,9 +22,8 @@ body {
 header,
 main,
 footer {
-    max-width: 1100px;
+    width: 840px;
     margin: 0 auto;
-    width: 100%;
 }
 
 header {
@@ -37,32 +36,24 @@ header {
 }
 
 header img {
-    width: 80px;
+    width: 100px;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 15px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
 }
 
 h1,
 h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
-}
-
-nav {
-    margin: 16px;
-    padding: 8px;
-    background-color: var(--secondary-color);
-
 }
 
 nav,
@@ -75,7 +66,6 @@ article {
 
 .hero {
     position: relative;
-    width: 100%;
 }
 
 .hero img {
@@ -101,25 +91,15 @@ article {
     left: 50px;
     transform: translateX(-50%);
     background-color: white;
-    padding: 20px;
-    width: 80%;
-    max-width: 800px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    gap: 15px;
+    padding: 15px;
+    width: 70%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, alpha);
 }
 
 .hero article img {
-
-    width: 120px;
-    height: auto;
-}
-
-.socialmedia {
-    display: flex;
-    justify-content: center;
+    float: right;
+    width: 125px;
+    margin-left: 10px;
 }
 
 .socialmedia a {
@@ -131,6 +111,7 @@ article {
     margin: 5px;
 }
 
+/* FOOTER */
 footer {
     text-align: center;
     margin-top: 20px;
