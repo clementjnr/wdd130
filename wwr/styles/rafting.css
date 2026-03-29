@@ -8,7 +8,6 @@
     --body-font: Arial, Helvetica, sans-serif;
 }
 
-/* RESET */
 * {
     margin: 0;
     padding: 0;
@@ -20,7 +19,6 @@ body {
     color: var(--accent1-color);
 }
 
-/* LAYOUT WIDTH */
 header,
 main,
 footer {
@@ -28,20 +26,19 @@ footer {
     margin: 0 auto;
 }
 
-/* HEADER (GRID REQUIRED) */
 header {
     display: grid;
     grid-template-columns: 1fr auto;
     align-items: center;
     background-color: var(--primary-color);
     padding: 10px;
+
 }
 
 header img {
     width: 100px;
 }
 
-/* NAV (FLEX REQUIRED) */
 nav ul {
     list-style: none;
     display: flex;
@@ -54,16 +51,16 @@ nav a {
     font-weight: bold;
 }
 
-/* HEADINGS */
 h1,
 h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
     text-align: center;
     margin: 10px 0;
+    padding: 5px;
+    background-color: var(--accent2-color);
 }
 
-/* HERO */
 .hero {
     position: relative;
 }
@@ -112,7 +109,6 @@ h2 {
     width: 100%;
 }
 
-/* ADVENTURES */
 .gallery {
     display: flex;
     justify-content: space-between;
@@ -128,7 +124,6 @@ figure {
     font-size: 14px;
 }
 
-/* FOOTER */
 footer {
     display: flex;
     justify-content: space-between;
