@@ -4,11 +4,10 @@
     --accent1-color: #264653;
     --accent2-color: #e9c46a;
 
-    --heading-font: Georgia, serif;
+    --heading-font: "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
 
-/* RESET */
 * {
     margin: 0;
     padding: 0;
@@ -20,7 +19,6 @@ body {
     color: var(--accent1-color);
 }
 
-/* LAYOUT WIDTH */
 header,
 main,
 footer {
@@ -28,12 +26,13 @@ footer {
     margin: 0 auto;
 }
 
-/* HEADER (GRID REQUIRED) */
 header {
     display: grid;
     grid-template-columns: 1fr auto;
+    /*justify-content: space-between;*/
     align-items: center;
     background-color: var(--primary-color);
+    color: var(--accent2-color);
     padding: 10px;
 }
 
@@ -41,46 +40,50 @@ header img {
     width: 100px;
 }
 
-/* NAV (FLEX REQUIRED) */
 nav ul {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 15px;
 }
 
 nav a {
-    text-decoration: none;
     color: var(--secondary-color);
-    font-weight: bold;
+    text-decoration: none;
 }
 
-/* HEADINGS */
 h1,
 h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
-    text-align: center;
-    margin: 10px 0;
 }
 
-/* HERO */
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
 .hero {
     position: relative;
 }
 
 .hero img {
-    width: 100%;
     display: block;
+    width: 100%;
+    height: auto;
 }
 
 .hero h1 {
     position: absolute;
     top: 20px;
     width: 100%;
+    padding: 16px;
+    text-align: center;
     background-color: var(--accent1-color);
     color: white;
-    padding: 10px;
-    opacity: 0.85;
+    opacity: 0.8;
 }
 
 .hero article {
@@ -88,59 +91,29 @@ h2 {
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    background: white;
+    background-color: white;
     padding: 15px;
     width: 70%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .hero article img {
     float: right;
-    width: 120px;
+    width: 125px;
     margin-left: 10px;
 }
 
-/* HISTORY */
-.history-content {
-    display: grid;
-    grid-template-columns: 1fr 200px 1fr;
-    gap: 20px;
-    align-items: center;
-    margin: 20px 0;
-}
-
-.history-content img {
-    width: 100%;
-}
-
-/* ADVENTURES */
-.gallery {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-}
-
-.gallery img {
-    width: 100%;
-}
-
-figure {
-    text-align: center;
-    font-size: 14px;
-}
-
-/* FOOTER */
-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 20px;
-}
-
-.socialmedia {
-    display: flex;
-    gap: 10px;
+.socialmedia a {
+    text-decoration: none;
 }
 
 .socialmedia img {
     width: 30px;
+    margin: 5px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    margin-top: 20px;
 }
