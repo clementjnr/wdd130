@@ -124,6 +124,10 @@ figure {
     font-size: 14px;
 }
 
+.map-frame {
+    border: 0;
+}
+
 .contact-container {
     display: flex;
     gap: 20px;
