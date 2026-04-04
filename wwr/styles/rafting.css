@@ -96,7 +96,7 @@ h2 {
     margin-left: 10px;
 }
 
-/* HISTORY */
+
 .history-content {
     display: grid;
     grid-template-columns: 1fr 200px 1fr;
@@ -123,6 +123,30 @@ figure {
     text-align: center;
     font-size: 14px;
 }
+
+.contact-container {
+    display: flex;
+    gap: 20px;
+    margin: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.employee-list {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.employee-list img {
+    width: 150px;
+    height: auto;
+}
+
 
 footer {
     display: flex;
