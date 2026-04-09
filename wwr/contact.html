@@ -1,132 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Paul Clement">
-
-    <title>Contact Us | White Water Rafting Company</title>
-    <meta name="description" content="Contact White Water Rafting Company for reservations, inquiries, or 
-    feedback. Reach us via form, phone, or email.">
-
-
-    <link rel="stylesheet" href="styles/rafting.css">
+  <meta charset="UTF-8">
+  <title>Contact Us | White Water Rafting</title>
+  <meta name="description" content="Contact us to book your rafting trip.">
+  <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
 
-    <header>
-        <img src="images/logo.png" alt="Rafting Company Logo">
+<header>
+  <img src="images/logo.png" alt="Rafting Company Logo">
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="trips.html">Trips</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+</header>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="trips.html">Trips</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
+<main>
 
-        <main>
+<h1>Contact Us</h1>
 
-       
-        <section class="contact-info">
-            <h1>White Water Rafting Company</h1>
-            <p>123 Main River Street<br>
-               Kolob, California<br>
-               +1 (999) 999-9999<br>
-               info@whitewater.com
-            </p>
-        </section>
+<form>
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name">
 
-    
-        <section class="contact-container">
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email">
 
-           
-            <div class="map">
-                <iframe 
-                    src="https://maps.google.com/maps?q=California&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                    class="map-frame">
-                </iframe>
-            </div>
+  <label for="message">Message:</label>
+  <textarea id="message" name="message"></textarea>
 
-          
-            <form class="contact-form">
+  <button type="submit">Send Message</button>
+</form>
 
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
+</main>
 
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-
-                <fieldset>
-                    <legend>Message Purpose</legend>
-
-                    <input type="radio" id="general" name="purpose" value="general">
-                    <label for="general">General Inquiry</label>
-
-                    <input type="radio" id="reservation" name="purpose" value="reservation">
-                    <label for="reservation">Reservation Question</label>
-
-                    <input type="radio" id="suggestion" name="purpose" value="suggestion">
-                    <label for="suggestion">Website Suggestion</label>
-
-                </fieldset>
-
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="4"></textarea>
-
-                <input type="checkbox" id="subscribe" name="subscribe">
-                    
-                <label for="subscribe">Please subscribe me to the monthly newsletter</label>
-
-                <button type="submit">Get in Touch!</button>
-            </form>
-        </section>
-
-       
-        <section class="employees">
-            <h2>We Are Here to Serve You</h2>
-
-            <div class="employee-list">
-                <figure>
-                    <img src="images/employee1.png" alt="Employee 1">
-                    <figcaption>John – Guide</figcaption>
-                </figure>
-
-                <figure>
-                    <img src="images/employee2.png" alt="Employee 2">
-                    <figcaption>Sarah – Instructor</figcaption>
-                </figure>
-
-                <figure>
-                    <img src="images/employee3.png" alt="Employee 3">
-                    <figcaption>Mike – Safety Expert</figcaption>
-                </figure>
-            </div>
-        </section>
-
-    </main>
-
-    <footer>
-        <p>© 2026 White Water Rafting Co. | Paul Clement</p>
-
-        <nav class="socialmedia">
-            <a href="https://facebook.com">
-                <img src="images/facebook.png" alt="Facebook">
-            </a>
-
-            <a href="https://instagram.com">
-                <img src="images/instagram.png" alt="Instagram">
-            </a>
-
-            <a href="https://linkedin.com">
-                <img src="images/linkedin.png" alt="LinkedIn">
-            </a>
-        </nav>
-    </footer>
+<footer>
+  <p>© 2026 White Water Rafting</p>
+</footer>
 
 </body>
-
 </html>
